@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   return (
@@ -7,9 +8,15 @@ const Header = () => {
       <div>
         <Logo />
       </div>
-      <div className="space-x-8 text-sm">
-        <Link href="/dashboard">Dashboard</Link>
-        <Link href="/login">Login</Link>
+      <div className="flex items-center space-x-8 text-sm">
+        <SignedIn>
+          <Link href="/dashboard">Dashboard</Link>
+          <UserButton afterSignOutUrl="/login" />
+        </SignedIn>
+        <SignedOut>
+          <Link href="/login">Login</Link>
+          <Link href="/sign-up">Signup</Link>
+        </SignedOut>
       </div>
     </header>
   );
