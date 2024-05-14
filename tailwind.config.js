@@ -22,6 +22,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        main: "url('https://images.unsplash.com/photo-1535016120720-40c646be5580')",
       },
     },
   },
