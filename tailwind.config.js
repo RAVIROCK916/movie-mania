@@ -10,12 +10,12 @@ module.exports = {
     extend: {
       colors: {
         dark: {
-          DEFAULT: "#222831",
-          1: "#31363F",
+          DEFAULT: "#4D869C",
+          1: "#7AB2B2",
         },
         light: {
-          DEFAULT: "#76ABAE",
-          1: "#EEEEEE",
+          DEFAULT: "#CDE8E5",
+          1: "#EEF7FF",
         },
       },
       backgroundImage: {

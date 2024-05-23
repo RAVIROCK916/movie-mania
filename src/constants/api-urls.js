@@ -2,7 +2,7 @@
 // template
 const MAIN_URL = "https://api.themoviedb.org/3";
 export const IMG_URL = "https://image.tmdb.org/t/p/original"
-export const VID_URL = "https://youtube.com/embed/"
+export const VID_URL = "https://youtube.com/embed"
 
 // movie
 export const MOVIE_DETAILS_URL = `${MAIN_URL}/movie`;
