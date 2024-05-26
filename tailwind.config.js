@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   darkMode: "selector",
   content: [
@@ -10,19 +13,19 @@ module.exports = {
     extend: {
       colors: {
         dark: {
-          DEFAULT: "#4D869C",
-          1: "#7AB2B2",
+          primary: colors.stone,
+          secondary: colors.red,
         },
         light: {
-          DEFAULT: "#CDE8E5",
-          1: "#EEF7FF",
+          primary: colors.neutral,
+          secondary: colors.zinc,
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        main: "url('https://images.unsplash.com/photo-1535016120720-40c646be5580')",
+        main: "url('https://images.unsplash.com/photo-1509347528160-9a9e33742cdb')",
       },
     },
   },

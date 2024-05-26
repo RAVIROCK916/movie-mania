@@ -4,10 +4,16 @@
 
 @layer base {
   body {
-    @apply bg-dark;
+    @apply bg-dark-primary-900;
   }
-  
+
   ::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply px-20 py-6;
   }
 }

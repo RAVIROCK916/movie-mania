@@ -1,10 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Logo from "./Logo";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/nextjs";
+import { MdLogin } from "react-icons/md";
 
 const Header = () => {
+  const { openUserProfile } = useClerk();
+
   return (
-    <header className="absolute left-0 right-0 top-0 z-[1] flex items-center justify-between bg-opacity-50 px-8 py-6 text-dark">
+    <header className="container-section absolute z-10 flex w-full items-center justify-between pb-12 text-dark-primary-100">
       <div>
         <Logo />
       </div>
@@ -14,7 +19,9 @@ const Header = () => {
           <UserButton afterSignOutUrl="/login" />
         </SignedIn>
         <SignedOut>
-          <Link href="/login">Login</Link>
+          <Link href="/login">
+            <MdLogin />
+          </Link>
           <Link href="/sign-up">Signup</Link>
         </SignedOut>
       </div>
