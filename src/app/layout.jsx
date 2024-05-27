@@ -2,6 +2,7 @@ import { Inter, Raleway } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   displayName: "Inter",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <body className={`${raleway.className} antialiased`}>
           <Header />
           <main className="min-h-screen">{children}</main>
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

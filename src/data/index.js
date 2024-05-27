@@ -6,8 +6,33 @@ import {
   FaHeart,
   FaFaceLaughSquint,
   FaQuestion,
+  FaSort,
+  FaFire,
+  FaStar,
+  FaCalendar,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
 } from "react-icons/fa6";
-import { PiKnifeFill } from "react-icons/pi";
+import { PiFilmSlateThin, PiKnifeFill } from "react-icons/pi";
+import { GiFilmProjector, GiFilmStrip } from "react-icons/gi";
+
+export const descriptionList = [
+  {
+    highlight: "10,000+",
+    description: "Movie Choices",
+    image: PiFilmSlateThin,
+  },
+  {
+    description: "High Quality",
+    image: GiFilmStrip,
+  },
+  {
+    highlight: "100+",
+    description: "Original",
+    image: GiFilmProjector,
+  },
+];
 
 export const movieCategories = [
   {
@@ -49,5 +74,45 @@ export const movieCategories = [
     name: "Thriller",
     description: "1000+ Movies",
     image: PiKnifeFill,
+  },
+];
+export const sortCategories = [
+  {
+    name: "Name",
+    description: "Sort by Name",
+    image: FaSort,
+  },
+  {
+    name: "Popularity",
+    description: "Sort by Popularity",
+    image: FaFire,
+  },
+  {
+    name: "Rating",
+    description: "Sort by Rating",
+    image: FaStar,
+  },
+  {
+    name: "Release Date",
+    description: "Sort by Year",
+    image: FaCalendar,
+  },
+];
+
+export const socials = [
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    url: "https://www.facebook.com/newurl",
+  },
+  {
+    name: "Twitter",
+    icon: FaTwitter,
+    url: "https://twitter.com/newurl",
+  },
+  {
+    name: "Instagram",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/newurl/",
   },
 ];

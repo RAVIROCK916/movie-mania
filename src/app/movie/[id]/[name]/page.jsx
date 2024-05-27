@@ -82,7 +82,7 @@ const Movie = ({ params: { id, name } }) => {
             <span className="mr-2 text-gray-600">{movie.imdbRating}</span>
           </div>
           <button
-            className="bg-dark-secondary-500 text-light-primary-100 rounded-sm px-16 py-3 font-bold shadow-lg"
+            className="bg-dark-secondary-600 text-light-primary-100 rounded-sm px-16 py-3 font-bold shadow-lg"
             onClick={() => router.push(`${pathName}/watch`)}
           >
             Watch

@@ -9,7 +9,7 @@ const Header = () => {
   const { openUserProfile } = useClerk();
 
   return (
-    <header className="container-section absolute z-10 flex w-full items-center justify-between pb-12 text-dark-primary-100">
+    <header className="container-section absolute left-0 right-0 top-0 z-10 m-0 flex items-center justify-between px-16 py-4 text-dark-primary-100">
       <div>
         <Logo />
       </div>

@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <Link
       href="/"
-      className="text-dark-secondary-500 cursor-pointer text-center text-sm"
+      className="cursor-pointer text-center text-sm text-dark-secondary-600"
     >
       <RiMovie2Line className="mx-auto size-8" />
 
