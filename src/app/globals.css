@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-dark-primary-950;
+    @apply bg-dark-primary-950 text-dark-primary-100;
   }
 
   ::-webkit-scrollbar {
