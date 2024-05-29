@@ -1,3 +1,5 @@
+"use client";
+
 import MovieCategoryCards from "@/components/MovieCategoryCards";
 import CategorySort from "@/components/CategorySort";
 import AboutUs from "@/components/AboutUs";

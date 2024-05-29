@@ -9,7 +9,7 @@ const Testimonials = () => {
       </h2>
       <div className="flex flex-wrap justify-between">
         {testimonials.map((testimonial) => (
-          <TestimonialCard testimonial={testimonial} />
+          <TestimonialCard key={testimonial.name} testimonial={testimonial} />
         ))}
       </div>
     </div>

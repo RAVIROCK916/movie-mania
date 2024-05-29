@@ -4,6 +4,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/nextjs";
 import { MdLogin } from "react-icons/md";
+import { BiUser } from "react-icons/bi";
 
 const Header = () => {
   const { openUserProfile } = useClerk();
@@ -19,10 +20,12 @@ const Header = () => {
           <UserButton afterSignOutUrl="/login" />
         </SignedIn>
         <SignedOut>
-          <Link href="/login">
-            <MdLogin />
+          <Link href="/sign-up">
+            <MdLogin className="text-xl" />
           </Link>
-          <Link href="/sign-up">Signup</Link>
+          <Link href="/login">
+            <BiUser className="text-xl" />
+          </Link>
         </SignedOut>
       </div>
     </header>

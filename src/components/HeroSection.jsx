@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
       <div className="space-y-3 bg-dark-primary-500/10 px-12 py-8 text-dark-primary-400">
         {descriptionList.map((item) => (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" key={item.highlight}>
             <span>
               <item.image className="text-7xl text-dark-primary-400" />
             </span>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { dark } from "@clerk/themes";
 
 const inter = Inter({
   displayName: "Inter",
@@ -22,14 +23,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
       <html lang="en">
         <head>
           <link rel="icon" href="/favicon.ico" />
         </head>
         <body className={`${raleway.className} antialiased`}>
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main className="flex min-h-screen items-center justify-center">
+            {children}
+          </main>
           <Footer />
         </body>
       </html>
