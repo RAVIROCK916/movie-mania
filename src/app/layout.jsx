@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         </head>
         <body className={`${raleway.className} antialiased`}>
           <Header />
-          <main className="flex min-h-screen items-center justify-center">
+          <main className="flex min-h-screen flex-col justify-center overflow-hidden">
             {children}
           </main>
           <Footer />

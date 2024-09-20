@@ -26,7 +26,7 @@ const MovieSection = ({ title, url }) => {
   };
 
   return (
-    <div className="m-8 flex flex-col gap-2">
+    <div className="m-8 flex flex-col gap-2 ">
       <div className="relative flex items-center justify-between">
         <h2 className="text-xl font-bold text-light-primary-100">{title}</h2>
         <div className="flex gap-2">
