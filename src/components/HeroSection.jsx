@@ -1,4 +1,5 @@
 import { descriptionList } from "@/data";
+import Link from "next/link"
 
 const HeroSection = () => {
   return (
@@ -10,9 +11,11 @@ const HeroSection = () => {
           price
         </p>
         <div className="flex items-center justify-between">
-          <button className="w-40 bg-dark-secondary-600 px-10 py-4 text-sm font-semibold">
-            Get Started
-          </button>
+          <Link href="/dashboard">
+            <button className="w-40 bg-dark-secondary-600 px-10 py-4 text-sm font-semibold">
+              Get Started
+            </button>
+          </Link>
           <button className="w-40 border border-dark-secondary-600 px-10 py-4 text-sm font-semibold">
             More
           </button>

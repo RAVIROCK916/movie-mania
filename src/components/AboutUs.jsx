@@ -38,18 +38,18 @@ const AboutUs = () => {
         <div className="flex gap-6">
           <div>
             <DescriptionParagraph>
-              Welcome to our website, where you'll find a vast collection of
-              movies from various genres and eras. Our platform is dedicated to
-              providing movie enthusiasts with a comprehensive and user-friendly
-              experience. Explore our extensive library, read reviews, and
-              discover your next favorite film.
+              Welcome to our website, where you&apos;ll find a vast collection
+              of movies from various genres and eras. Our platform is dedicated
+              to providing movie enthusiasts with a comprehensive and
+              user-friendly experience. Explore our extensive library, read
+              reviews, and discover your next favorite film.
             </DescriptionParagraph>
             <DescriptionParagraph>
-              Welcome to our website, where you'll find a vast collection of
-              movies from various genres and eras. Our platform is dedicated to
-              providing movie enthusiasts with a comprehensive and user-friendly
-              experience. Explore our extensive library, read reviews, and
-              discover your next favorite film.
+              Welcome to our website, where you&apos;ll find a vast collection
+              of movies from various genres and eras. Our platform is dedicated
+              to providing movie enthusiasts with a comprehensive and
+              user-friendly experience. Explore our extensive library, read
+              reviews, and discover your next favorite film.
             </DescriptionParagraph>
           </div>
           <div>
@@ -58,12 +58,12 @@ const AboutUs = () => {
         </div>
         <div>
           <DescriptionParagraph>
-            Welcome to our website, where you'll find a vast collection of
+            Welcome to our website, where you&apos;ll find a vast collection of
             movies from various genres and eras. Our platform is dedicated to
             providing movie enthusiasts with a comprehensive and user-friendly
             experience. Explore our extensive library, read reviews, and
             discover your next favorite film. Welcome to our website, where
-            you'll find a vast collection of movies from various genres and
+            you&apos;ll find a vast collection of movies from various genres and
             eras. Our platform is dedicated to providing movie enthusiasts with
             a comprehensive and user-friendly experience. Explore our extensive
             library, read reviews, and discover your next favorite film.

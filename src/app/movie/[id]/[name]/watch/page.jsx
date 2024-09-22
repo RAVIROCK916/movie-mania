@@ -3,7 +3,7 @@
 import useFetchVideos from "@/hooks/useFetchVideos";
 import { VID_URL } from "@/constants/api-urls";
 
-const page = ({ params: { id, name } }) => {
+const Page = ({ params: { id, name } }) => {
   const videos = useFetchVideos(id);
   console.log(videos);
   return (
@@ -15,7 +15,7 @@ const page = ({ params: { id, name } }) => {
               src={`${VID_URL}/${videos[0].key}`}
               className="h-[80vh] w-screen"
             ></iframe>
-            <p className="text-xl font-bold px-8 py-4 text-neutral-900">
+            <p className="px-8 py-4 text-xl font-bold text-neutral-900">
               {videos[0].name}
             </p>
           </div>
@@ -36,4 +36,4 @@ const page = ({ params: { id, name } }) => {
     </div>
   );
 };
-export default page;
+export default Page;

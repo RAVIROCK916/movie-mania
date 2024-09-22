@@ -8,4 +8,7 @@ const MovieScrollLayout = forwardRef(({ children }, ref) => {
     </div>
   );
 });
+
+MovieScrollLayout.displayName = "MovieScrollLayout";
+
 export default MovieScrollLayout;
